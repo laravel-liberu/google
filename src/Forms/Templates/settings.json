@@ -1,0 +1,73 @@
+{
+    "routePrefix": "integrations.google.settings",
+    "sections": [
+        {
+            "columns": 2,
+            "fields": [
+                {
+                    "label": "Analytics Id",
+                    "name": "analytics_id",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "encrypt"
+                    }
+                },
+                {
+                    "label": "Ads Id",
+                    "name": "ads_id",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "encrypt"
+                    }
+                },
+                {
+                    "label": "Maps key",
+                    "name": "maps_key",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "encrypt"
+                    }
+                },
+                {
+                    "label": "Maps URL",
+                    "name": "maps_url",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                },
+                {
+                    "label": "Recaptcha key",
+                    "name": "recaptcha_key",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "encrypt"
+                    }
+                },
+                {
+                    "label": "Recaptcha secret",
+                    "name": "recaptcha_secret",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "encrypt"
+                    }
+                },
+                {
+                    "label": "Tag Manager Id",
+                    "name": "tag_manager_id",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "encrypt"
+                    }
+                }
+            ]
+        }
+    ]
+}

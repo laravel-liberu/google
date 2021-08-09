@@ -1,0 +1,46 @@
+{
+    "name": "laravel-enso/google",
+    "type": "library",
+    "description": "",
+    "authors": [
+        {
+            "name": "Adrian Ocneanu",
+            "email": "aocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Mihai Ocneanu",
+            "email": "mihai.ocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Vlad Chioivanu",
+            "email": "vlad.chiovianu@earthlink.ro",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [],
+    "homepage": "https://www.laravel-enso.com",
+    "require": {
+        "laravel-enso/forms": "^4.0",
+        "laravel-enso/helpers": "^2.0",
+        "laravel-enso/upgrade": "^2.0",
+        "laravel-enso/migrator": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\Google\\": "src/",
+            "LaravelEnso\\Google\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelEnso\\Google\\AppServiceProvider"
+            ]
+        }
+    }
+}
