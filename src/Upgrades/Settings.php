@@ -14,7 +14,7 @@ class Settings implements MigratesData, MigratesPostDataMigration
 {
     public function isMigrated(): bool
     {
-        return Model::exists();
+        return Schema::hasTable('google_settings') && Model::exists();
     }
 
     public function migrateData(): void
