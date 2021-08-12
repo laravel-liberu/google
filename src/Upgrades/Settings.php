@@ -2,15 +2,13 @@
 
 namespace LaravelEnso\Google\Upgrades;
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Schema;
 use LaravelEnso\Google\Models\Settings as Model;
 use LaravelEnso\Upgrade\Contracts\MigratesData;
-use LaravelEnso\Upgrade\Contracts\MigratesPostDataMigration;
 use LaravelEnso\Webshop\Models\Settings as WebshopSettings;
 
-class Settings implements MigratesData, MigratesPostDataMigration
+class Settings implements MigratesData
 {
     public function isMigrated(): bool
     {
@@ -30,18 +28,6 @@ class Settings implements MigratesData, MigratesPostDataMigration
             'recaptcha_secret' => $settings->google_recaptcha_secret,
             'tag_manager_id' => $settings->google_tag_manager_id,
         ])->save();
-    }
-
-    public function migratePostDataMigration(): void
-    {
-        Schema::table('webshop_settings', function (Blueprint $table) {
-            $table->dropColumn('google_analytics_id');
-            $table->dropColumn('google_ads_id');
-            $table->dropColumn('google_maps_key');
-            $table->dropColumn('google_recaptcha_key');
-            $table->dropColumn('google_recaptcha_secret');
-            $table->dropColumn('google_tag_manager_id');
-        });
     }
 
     private function mapsUrl(): string
