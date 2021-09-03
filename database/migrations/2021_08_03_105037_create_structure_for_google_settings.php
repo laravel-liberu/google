@@ -7,7 +7,7 @@ class CreateStructureForGoogleSettings extends Migration
     protected ?string $parentMenu = 'Google';
 
     protected array $menu = [
-        'name' => 'Settings', 'icon' => 'fad user-cog', 'route' => 'integrations.google.settings.index', 'order_index' => 100, 'has_children' => false,
+        'name' => 'Settings', 'icon' => 'fas user-cog', 'route' => 'integrations.google.settings.index', 'order_index' => 100, 'has_children' => false,
     ];
 
     protected array $permissions = [
