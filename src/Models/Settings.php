@@ -4,6 +4,7 @@ namespace LaravelEnso\Google\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use LaravelEnso\Google\Database\Factories\SettingsFactory;
 use LaravelEnso\Helpers\Casts\Encrypt;
 use LaravelEnso\Rememberable\Traits\Rememberable;
 
@@ -49,5 +50,10 @@ class Settings extends Model
     public static function mapsURL(): ?string
     {
         return self::current()->maps_url;
+    }
+
+    protected static function newFactory()
+    {
+        return SettingsFactory::new();
     }
 }

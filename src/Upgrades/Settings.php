@@ -4,7 +4,6 @@ namespace LaravelEnso\Google\Upgrades;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Schema;
-use LaravelEnso\Google\Database\Factories\SettingsFactory;
 use LaravelEnso\Google\Models\Settings as Model;
 use LaravelEnso\Upgrade\Contracts\Applicable;
 use LaravelEnso\Upgrade\Contracts\MigratesData;
@@ -41,10 +40,5 @@ class Settings implements MigratesData, Applicable
     {
         return Config::get('enso.addresses.googleMaps.url')
             ?? 'https://maps.googleapis.com/maps/api/geocode/json';
-    }
-
-    protected static function newFactory()
-    {
-        return SettingsFactory::new();
     }
 }
