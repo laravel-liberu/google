@@ -10,17 +10,18 @@ use LaravelEnso\Rememberable\Traits\Rememberable;
 
 class Settings extends Model
 {
-    use HasFactory, Rememberable;
+    use HasFactory;
+    use Rememberable;
 
     protected $table = 'google_settings';
 
     protected $guarded = ['id'];
 
     protected $casts = [
-        'maps_key' => Encrypt::class,
-        'recaptcha_key' => Encrypt::class,
+        'maps_key'         => Encrypt::class,
+        'recaptcha_key'    => Encrypt::class,
         'recaptcha_secret' => Encrypt::class,
-        'analytics_id' => Encrypt::class,
+        'analytics_id'     => Encrypt::class,
     ];
 
     private static $instance;
