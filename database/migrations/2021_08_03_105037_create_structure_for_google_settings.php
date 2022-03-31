@@ -2,7 +2,7 @@
 
 use LaravelEnso\Migrator\Database\Migration;
 
-class CreateStructureForGoogleSettings extends Migration
+return new class extends Migration
 {
     protected ?string $parentMenu = 'Google';
 
@@ -14,4 +14,4 @@ class CreateStructureForGoogleSettings extends Migration
         ['name' => 'integrations.google.settings.index', 'description' => 'Show settings for Google', 'is_default' => false],
         ['name' => 'integrations.google.settings.update', 'description' => 'Update Google settings', 'is_default' => false],
     ];
-}
+};

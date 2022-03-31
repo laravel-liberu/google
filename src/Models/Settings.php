@@ -10,7 +10,8 @@ use LaravelEnso\Rememberable\Traits\Rememberable;
 
 class Settings extends Model
 {
-    use HasFactory, Rememberable;
+    use HasFactory;
+    use Rememberable;
 
     protected $table = 'google_settings';
 
