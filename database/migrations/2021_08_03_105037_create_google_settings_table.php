@@ -12,11 +12,11 @@ return new class extends Migration
             $table->increments('id');
 
             $table->string('analytics_id')->nullable();
-            $table->string('ads_id')->nullable();
-            $table->string('maps_key')->nullable();
+            $table->string('ads_id', 260)->nullable();
+            $table->string('maps_key', 260)->nullable();
             $table->string('maps_url')->nullable();
-            $table->string('recaptcha_key')->nullable();
-            $table->string('recaptcha_secret')->nullable();
+            $table->string('recaptcha_key', 260)->nullable();
+            $table->string('recaptcha_secret', 260)->nullable();
             $table->string('tag_manager_id')->nullable();
 
             $table->timestamps();
