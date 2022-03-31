@@ -26,13 +26,13 @@ class Settings implements MigratesData, Applicable
         $settings = WebshopSettings::first();
 
         (new Model())->setRawAttributes([
-            'analytics_id' => $settings->google_analytics_id,
-            'ads_id' => $settings->google_ads_id,
-            'maps_key' => $settings->google_maps_key,
-            'maps_url' => $this->mapsUrl(),
-            'recaptcha_key' => $settings->google_recaptcha_key,
+            'analytics_id'     => $settings->google_analytics_id,
+            'ads_id'           => $settings->google_ads_id,
+            'maps_key'         => $settings->google_maps_key,
+            'maps_url'         => $this->mapsUrl(),
+            'recaptcha_key'    => $settings->google_recaptcha_key,
             'recaptcha_secret' => $settings->google_recaptcha_secret,
-            'tag_manager_id' => $settings->google_tag_manager_id,
+            'tag_manager_id'   => $settings->google_tag_manager_id,
         ])->save();
     }
 
