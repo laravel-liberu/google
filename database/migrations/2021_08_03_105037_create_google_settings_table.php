@@ -12,11 +12,11 @@ class CreateGoogleSettingsTable extends Migration
             $table->increments('id');
 
             $table->string('analytics_id')->nullable();
-            $table->string('ads_id', 256)->nullable();
-            $table->string('maps_key', 256)->nullable();
+            $table->string('ads_id', 260)->nullable();
+            $table->string('maps_key', 260)->nullable();
             $table->string('maps_url')->nullable();
-            $table->string('recaptcha_key', 256)->nullable();
-            $table->string('recaptcha_secret', 256)->nullable();
+            $table->string('recaptcha_key', 260)->nullable();
+            $table->string('recaptcha_secret', 260)->nullable();
             $table->string('tag_manager_id')->nullable();
 
             $table->timestamps();
