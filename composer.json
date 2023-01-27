@@ -1,34 +1,34 @@
 {
-    "name": "laravel-enso/google",
+    "name": "cgdsoftware/google",
     "type": "library",
     "description": "",
     "authors": [
         {
             "name": "Adrian Ocneanu",
             "email": "aocneanu@gmail.com",
-            "homepage": "https://laravel-enso.com",
+            "homepage": "https://cgdsoftware.com",
             "role": "Developer"
         },
         {
             "name": "Mihai Ocneanu",
             "email": "mihai.ocneanu@gmail.com",
-            "homepage": "https://laravel-enso.com",
+            "homepage": "https://cgdsoftware.com",
             "role": "Developer"
         },
         {
             "name": "Vlad Chioivanu",
             "email": "vlad.chiovianu@earthlink.ro",
-            "homepage": "https://laravel-enso.com",
+            "homepage": "https://cgdsoftware.com",
             "role": "Developer"
         }
     ],
     "keywords": [],
-    "homepage": "https://www.laravel-enso.com",
+    "homepage": "https://www.cgdsoftware.com",
     "require": {
-        "laravel-enso/forms": "^4.0",
-        "laravel-enso/helpers": "^2.0",
-        "laravel-enso/upgrade": "^2.0",
-        "laravel-enso/migrator": "^2.0"
+        "cgdsoftware/forms": "^4.0",
+        "cgdsoftware/helpers": "^2.0",
+        "cgdsoftware/upgrade": "^2.0",
+        "cgdsoftware/migrator": "^2.0"
     },
     "autoload": {
         "psr-4": {
