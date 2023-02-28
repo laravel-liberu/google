@@ -22,7 +22,7 @@ class Recaptcha implements InvokableRule
         $fails = ! Http::post("{$url}?{$query}")->json('success');
 
         if ($fails) {
-            $fail(__('Recaptcha verification has failed'));
+            $fail(__('Recaptcha verification failed, please reload the page...'));
         }
     }
 }
