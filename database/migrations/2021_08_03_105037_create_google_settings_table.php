@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     public function up()
     {
         Schema::create('google_settings', function (Blueprint $table) {
@@ -17,6 +16,7 @@ return new class extends Migration
             $table->string('maps_url')->nullable();
             $table->string('recaptcha_key', 300)->nullable();
             $table->string('recaptcha_secret', 300)->nullable();
+            $table->string('recaptcha_url', 300)->nullable();
             $table->string('tag_manager_id')->nullable();
 
             $table->timestamps();

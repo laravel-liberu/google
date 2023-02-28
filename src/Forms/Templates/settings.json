@@ -59,6 +59,15 @@
                     }
                 },
                 {
+                    "label": "Recaptcha URL",
+                    "name": "recaptcha_url",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "text"
+                    }
+                },
+                {
                     "label": "Tag Manager Id",
                     "name": "tag_manager_id",
                     "value": "",

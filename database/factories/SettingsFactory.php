@@ -12,13 +12,14 @@ class SettingsFactory extends Factory
     public function definition()
     {
         return [
-            'analytics_id'     => null,
-            'ads_id'           => null,
-            'maps_key'         => null,
-            'maps_url'         => null,
-            'recaptcha_key'    => null,
+            'analytics_id' => null,
+            'ads_id' => null,
+            'maps_key' => 'https://maps.googleapis.com/maps/api/geocode/json',
+            'maps_url' => null,
+            'recaptcha_key' => null,
+            'recaptcha_url' => 'https://www.google.com/recaptcha/api/siteverify',
             'recaptcha_secret' => null,
-            'tag_manager_id'   => null,
+            'tag_manager_id' => null,
         ];
     }
 }

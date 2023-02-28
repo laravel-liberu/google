@@ -30,9 +30,14 @@ class Settings extends Model
             ?? self::factory()->create();
     }
 
-    public static function googleRecaptchaSecret(): ?string
+    public static function recaptchaSecret(): ?string
     {
         return self::current()->recaptcha_secret;
+    }
+
+    public static function recaptchaUrl(): ?string
+    {
+        return self::current()->recaptcha_url;
     }
 
     public static function tagManagerId(): ?string
