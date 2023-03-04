@@ -18,10 +18,13 @@ class Settings extends Model
     protected $guarded = ['id'];
 
     protected $casts = [
+        'analytics_id' => Encrypt::class,
+        'ads_id' => Encrypt::class,
+        'tag_id' => Encrypt::class,
         'maps_key' => Encrypt::class,
+        'geocoding_key' => Encrypt::class,
         'recaptcha_key' => Encrypt::class,
         'recaptcha_secret' => Encrypt::class,
-        'analytics_id' => Encrypt::class,
     ];
 
     public static function current()
@@ -40,6 +43,11 @@ class Settings extends Model
         return self::current()->recaptcha_url;
     }
 
+    public static function adsId(): ?string
+    {
+        return self::current()->ads_id;
+    }
+
     public static function tagManagerId(): ?string
     {
         return self::current()->tag_manager_id;
@@ -48,6 +56,11 @@ class Settings extends Model
     public static function mapsKey(): ?string
     {
         return self::current()->maps_key;
+    }
+
+    public static function geocodingKey(): ?string
+    {
+        return self::current()->geocoding_key;
     }
 
     public static function mapsURL(): ?string

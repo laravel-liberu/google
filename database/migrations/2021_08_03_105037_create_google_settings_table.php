@@ -13,6 +13,7 @@ return new class extends Migration {
             $table->string('analytics_id')->nullable();
             $table->string('ads_id', 300)->nullable();
             $table->string('maps_key', 300)->nullable();
+            $table->string('geocoding_key', 300)->nullable();
             $table->string('maps_url')->nullable();
             $table->string('recaptcha_key', 300)->nullable();
             $table->string('recaptcha_secret', 300)->nullable();

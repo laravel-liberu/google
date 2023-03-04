@@ -2,7 +2,7 @@
     "routePrefix": "integrations.google.settings",
     "sections": [
         {
-            "columns": 2,
+            "columns": 3,
             "fields": [
                 {
                     "label": "Analytics Id",
@@ -23,6 +23,20 @@
                     }
                 },
                 {
+                    "label": "Tag Manager Id",
+                    "name": "tag_manager_id",
+                    "value": "",
+                    "meta": {
+                        "type": "input",
+                        "content": "encrypt"
+                    }
+                }
+            ]
+        },
+        {
+            "columns": 2,
+            "fields": [
+                {
                     "label": "Maps key",
                     "name": "maps_key",
                     "value": "",
@@ -32,12 +46,12 @@
                     }
                 },
                 {
-                    "label": "Maps URL",
-                    "name": "maps_url",
+                    "label": "Geocoding key",
+                    "name": "geocoding_key",
                     "value": "",
                     "meta": {
                         "type": "input",
-                        "content": "text"
+                        "content": "encrypt"
                     }
                 },
                 {
@@ -68,12 +82,12 @@
                     }
                 },
                 {
-                    "label": "Tag Manager Id",
-                    "name": "tag_manager_id",
+                    "label": "Maps URL",
+                    "name": "maps_url",
                     "value": "",
                     "meta": {
                         "type": "input",
-                        "content": "encrypt"
+                        "content": "text"
                     }
                 }
             ]
