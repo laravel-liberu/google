@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\Google\Http\Controllers\Settings;
+namespace LaravelLiberu\Google\Http\Controllers\Settings;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Google\Forms\Builders\Settings as Form;
-use LaravelEnso\Google\Models\Settings;
+use LaravelLiberu\Google\Forms\Builders\Settings as Form;
+use LaravelLiberu\Google\Models\Settings;
 
 class Index extends Controller
 {

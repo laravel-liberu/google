@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\Google\Http\Controllers\Settings;
+namespace LaravelLiberu\Google\Http\Controllers\Settings;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Google\Http\Requests\ValidateSettings;
-use LaravelEnso\Google\Models\Settings;
+use LaravelLiberu\Google\Http\Requests\ValidateSettings;
+use LaravelLiberu\Google\Models\Settings;
 
 class Update extends Controller
 {

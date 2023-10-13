@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\Google;
+namespace LaravelLiberu\Google;
 
 use Illuminate\Support\ServiceProvider;
 

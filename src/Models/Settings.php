@@ -1,12 +1,12 @@
 <?php
 
-namespace LaravelEnso\Google\Models;
+namespace LaravelLiberu\Google\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use LaravelEnso\Google\Database\Factories\SettingsFactory;
-use LaravelEnso\Helpers\Casts\Encrypt;
-use LaravelEnso\Rememberable\Traits\Rememberable;
+use LaravelLiberu\Google\Database\Factories\SettingsFactory;
+use LaravelLiberu\Helpers\Casts\Encrypt;
+use LaravelLiberu\Rememberable\Traits\Rememberable;
 
 class Settings extends Model
 {

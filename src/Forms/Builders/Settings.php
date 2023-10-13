@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\Google\Forms\Builders;
+namespace LaravelLiberu\Google\Forms\Builders;
 
-use LaravelEnso\Forms\Services\Form;
-use LaravelEnso\Google\Models\Settings as Model;
+use LaravelLiberu\Forms\Services\Form;
+use LaravelLiberu\Google\Models\Settings as Model;
 
 class Settings
 {

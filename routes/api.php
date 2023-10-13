@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use LaravelEnso\Google\Http\Controllers\Settings\Index;
-use LaravelEnso\Google\Http\Controllers\Settings\Update;
+use LaravelLiberu\Google\Http\Controllers\Settings\Index;
+use LaravelLiberu\Google\Http\Controllers\Settings\Update;
 
 Route::middleware(['api', 'auth', 'core'])
     ->prefix('api/integrations/google/settings')

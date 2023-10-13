@@ -1,11 +1,11 @@
 <?php
 
-namespace LaravelEnso\Google\Upgrades;
+namespace LaravelLiberu\Google\Upgrades;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use LaravelEnso\Upgrade\Contracts\MigratesTable;
-use LaravelEnso\Upgrade\Helpers\Column;
+use LaravelLiberu\Upgrade\Contracts\MigratesTable;
+use LaravelLiberu\Upgrade\Helpers\Column;
 
 class SettingsStructure implements MigratesTable
 {

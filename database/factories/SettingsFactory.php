@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\Google\Database\Factories;
+namespace LaravelLiberu\Google\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LaravelEnso\Google\Models\Settings as Model;
+use LaravelLiberu\Google\Models\Settings as Model;
 
 class SettingsFactory extends Factory
 {

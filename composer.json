@@ -32,14 +32,14 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelEnso\\Google\\": "src/",
-            "LaravelEnso\\Google\\Database\\Factories\\": "database/factories/"
+            "LaravelLiberu\\Google\\": "src/",
+            "LaravelLiberu\\Google\\Database\\Factories\\": "database/factories/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEnso\\Google\\AppServiceProvider"
+                "LaravelLiberu\\Google\\AppServiceProvider"
             ]
         }
     },
